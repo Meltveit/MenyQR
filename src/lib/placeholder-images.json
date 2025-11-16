@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A vibrant restaurant setting with people dining",
+      "imageUrl": "https://images.unsplash.com/photo-1538333581680-29dd4752ddf2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYzMjc0NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant interior"
+    },
+    {
+      "id": "menu-item-burger",
+      "description": "A delicious looking burger with fries",
+      "imageUrl": "https://images.unsplash.com/photo-1658008305029-7a99bc183e47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXJnZXIlMjBmcmllc3xlbnwwfHx8fDE3NjMyNzkwNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "burger fries"
+    },
+    {
+      "id": "menu-item-salad",
+      "description": "A fresh and colorful salad",
+      "imageUrl": "https://images.unsplash.com/photo-1570197571499-166b36435e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmVzaCUyMHNhbGFkfGVufDB8fHx8MTc2MzIyNDI1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh salad"
+    },
+    {
+      "id": "menu-item-coffee",
+      "description": "A cup of latte with art",
+      "imageUrl": "https://images.unsplash.com/photo-1681838853984-697bbb001257?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsYXR0ZSUyMGFydHxlbnwwfHx8fDE3NjMzMTE5NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "latte art"
+    },
+    {
+      "id": "menu-item-pizza",
+      "description": "A slice of pepperoni pizza",
+      "imageUrl": "https://images.unsplash.com/photo-1593504049359-74330189a345?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwaXp6YSUyMHNsaWNlfGVufDB8fHx8MTc2MzI3OTA1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pizza slice"
+    },
+    {
+      "id": "menu-item-sushi",
+      "description": "A plate of assorted sushi",
+      "imageUrl": "https://images.unsplash.com/photo-1736885978380-8d7d9f7d7880?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdXNoaSUyMHBsYXR0ZXJ8ZW58MHx8fHwxNzYzMjYyOTY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sushi platter"
+    },
+    {
+      "id": "menu-item-pasta",
+      "description": "A bowl of spaghetti bolognese",
+      "imageUrl": "https://images.unsplash.com/photo-1653122025256-d1ac2880c511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzcGFnaGV0dGklMjBib2xvZ25lc2V8ZW58MHx8fHwxNzYzMzA3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spaghetti bolognese"
+    },
+    {
+      "id": "qr-code-placeholder",
+      "description": "A placeholder for a QR code",
+      "imageUrl": "https://images.unsplash.com/photo-1600147131759-880e94a6185f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxxciUyMGNvZGV8ZW58MHx8fHwxNzYzMjczMDM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "qr code"
+    },
+    {
+      "id": "restaurant-logo-placeholder",
+      "description": "A placeholder logo for a restaurant",
+      "imageUrl": "https://images.unsplash.com/photo-1714339650202-99d68bac8e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZXN0YXVyYW50JTIwbG9nb3xlbnwwfHx8fDE3NjMyODk4ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant logo"
+    }
+  ]
 }
