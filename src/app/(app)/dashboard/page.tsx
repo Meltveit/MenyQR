@@ -17,7 +17,7 @@ export default function DashboardPage() {
   
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl font-bold tracking-tight">Velkommen tilbake, {mockUser.name.split(' ')[0]}!</h1>
+      <h1 className="text-3xl font-bold tracking-tight">Velkommen tilbake, {mockUser.displayName?.split(' ')[0] || 'Bruker'}!</h1>
       
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
