@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   Avatar,
@@ -14,11 +16,25 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { mockUser } from "@/lib/data";
+import { useAuth } from "@/hooks/use-auth";
+import { handleSignOut } from "@/lib/firebase/auth";
+import { useRouter } from "next/navigation";
 
 export function UserNav() {
+  const { user } = useAuth();
+  const router = useRouter();
+
+  const onSignOut = async () => {
+    await handleSignOut();
+    router.push('/');
+  }
+
   const getInitials = (name: string) => {
     return name.split(' ').map(n => n[0]).join('');
+  }
+
+  if (!user) {
+    return null;
   }
 
   return (
@@ -26,17 +42,17 @@ export function UserNav() {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" className="relative h-8 w-8 rounded-full">
           <Avatar className="h-9 w-9">
-            <AvatarImage src={mockUser.avatarUrl} alt={`@${mockUser.name}`} />
-            <AvatarFallback>{getInitials(mockUser.name)}</AvatarFallback>
+            <AvatarImage src={user.photoURL || ''} alt={`@${user.displayName}`} />
+            <AvatarFallback>{getInitials(user.displayName || 'User')}</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
-            <p className="text-sm font-medium leading-none">{mockUser.name}</p>
+            <p className="text-sm font-medium leading-none">{user.displayName}</p>
             <p className="text-xs leading-none text-muted-foreground">
-              {mockUser.email}
+              {user.email}
             </p>
           </div>
         </DropdownMenuLabel>
@@ -54,11 +70,9 @@ export function UserNav() {
           </Link>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <Link href="/">
-            <DropdownMenuItem>
-            Logg ut
-            </DropdownMenuItem>
-        </Link>
+        <DropdownMenuItem onClick={onSignOut}>
+          Logg ut
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -3,9 +3,9 @@ import { PlaceHolderImages } from './placeholder-images';
 
 export const mockUser: User = {
   id: 'user-123',
-  name: 'Espresso House',
+  displayName: 'Espresso House',
   email: 'manager@espressohouse.no',
-  avatarUrl: PlaceHolderImages.find(p => p.id === 'restaurant-logo-placeholder')?.imageUrl,
+  photoURL: PlaceHolderImages.find(p => p.id === 'restaurant-logo-placeholder')?.imageUrl,
   tier: 'Silver',
 };
 

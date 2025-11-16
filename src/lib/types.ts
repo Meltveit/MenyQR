@@ -1,9 +1,7 @@
-export type User = {
-  id: string;
-  name: string;
-  email: string;
-  avatarUrl?: string;
-  tier: 'Freemium' | 'Bronze' | 'Silver' | 'Gold';
+import { User as FirebaseUser } from "firebase/auth";
+
+export interface User extends Partial<FirebaseUser> {
+  tier?: 'Freemium' | 'Bronze' | 'Silver' | 'Gold';
 };
 
 export type MenuItem = {
